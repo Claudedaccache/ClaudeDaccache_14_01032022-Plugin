@@ -1,10 +1,8 @@
 import React from "react";
-import { useState } from "react";
 import Modal from "../Components/Modal/Modal";
 
 
 function ModalContainer(props) {
-  // const [ModalStatus, setModalStatus] = useState(true);
  return (
     <>
       <Modal
