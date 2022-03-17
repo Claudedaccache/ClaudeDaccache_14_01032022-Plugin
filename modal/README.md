@@ -4,7 +4,7 @@ Open and close a modal in ReactJs
 
 # Installation
 
-'npm i modal --save'
+'npm i @claudedacc/modalcontainer'
 
 Then...
 
