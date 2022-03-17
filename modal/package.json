@@ -1,11 +1,22 @@
 {
   "name": "@claudedacc/modalcontainer",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "main": "dist/index.js",
   "module": "dist/index.js",
-  "files": [ "dist", "README.md" ],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
+    "url": "https://github.com/Claudedaccache/ClaudeDaccache_14_01032022-Plugin.git"
+  },
+  "author": "Claudedacc",
+  "keywords": [
+    "ReactJs modal"
+  ],
+  "license": "ISC",
+  "bugs": {
     "url": "https://github.com/Claudedaccache/ClaudeDaccache_14_01032022-Plugin.git"
   },
   "dependencies": {
@@ -15,6 +26,9 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.7",
+    "@babel/preset-react": "^7.16.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0"
@@ -31,14 +45,6 @@
       "react-app/jest"
     ]
   },
-"keywords": ["ReactJs modal"],
-
-"author": "Claudedacc",
-"license": "ISC",
-"bugs": {
-  "url": "https://github.com/Claudedaccache/ClaudeDaccache_14_01032022-Plugin.git"
-},
-
   "browserslist": {
     "production": [
       ">0.2%",
