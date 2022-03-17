@@ -1,5 +1,5 @@
 {
-  "name": "modal",
+  "name": "@claudedacc/modalcontainer",
   "version": "0.1.0",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -31,6 +31,14 @@
       "react-app/jest"
     ]
   },
+"keywords": ["ReactJs modal"],
+
+"author": "Claudedacc",
+"license": "ISC",
+"bugs": {
+  "url": "https://github.com/Claudedaccache/ClaudeDaccache_14_01032022-Plugin.git"
+},
+
   "browserslist": {
     "production": [
       ">0.2%",
