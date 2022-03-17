@@ -8,7 +8,6 @@ Open and close a modal in ReactJs
 
 Then...
 
-
 ```
 import ModalContainer from "Modal";
 
@@ -28,14 +27,10 @@ const [ModalStatus, setModalStatus] = useState(true);
 
 ##Props
 
-Modal supports several props:
+Modal supports several props that are required:
 
-* *ModalStatus* - _boolean_ (Default to true) --- Default value of the modal status 
-* *setModalStatus* - _boolean_ ( true / false) --- Change the state of the Modal status
-* *ModalContainerClass* - _object_ (default value "none") --- custom your own modalContainer style 
-* *ModalBodyClass* - _object_ (default value "none") --- custom your own ModalBodyClass style 
-* *ModalcloseIcon* - _object_ (default value "none") --- custom your own ModalcloseIcon style 
-
-
-
-
+- _ModalStatus_ - _boolean_ (Default to true) --- Default value of the modal status
+- _setModalStatus_ - _boolean_ ( true / false) --- Change the state of the Modal status
+- _ModalContainerClass_ - _object_ (default value "none" / {{custom style}}) --- custom your own modalContainer style
+- _ModalBodyClass_ - _object_ (default value "none"/ {{custom style}}) --- custom your own ModalBodyClass style
+- _ModalcloseIcon_ - _object_ (default value "none" / {{custom style}}) --- custom your own ModalcloseIcon style
