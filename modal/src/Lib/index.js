@@ -1,2 +1,2 @@
-import Modal from './Components/index'
+import {Modal} from './Components/index'
 export default Modal
