@@ -1,5 +1,5 @@
 {
-  "name": "simple_customizable_reactJs_Modal",
+  "name": "@claudedacc/modalcontainer",
   "version": "1.0.5",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -35,7 +35,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

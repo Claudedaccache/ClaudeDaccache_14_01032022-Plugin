@@ -1,2 +1,2 @@
-import Modal from '../Lib/Container/ModalContainer'
+import Modal from './Components/index'
 export default Modal
