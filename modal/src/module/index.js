@@ -1,21 +1,18 @@
-import React, { useState } from "react";
-import ModalContainer from "../Lib/Container/ModalContainer";
+import { useState } from "react";
+import { Modal } from "../Lib/Components";
 
 function App() {
-  const [ModalStatus, setModalStatus] = useState(true);
+  const [Isopen, setIsopen] = useState(true);
 
   return (
-    <>
-      <ModalContainer
-        ModalStatus={ModalStatus}
-        setModalStatus={setModalStatus}
-        ModalContainerClass="none"
-        ModalBodyClass="none"
-        ModalcloseIcon="none"
-      >
-        Modal Text
-      </ModalContainer>
-    </>
+    <div className="App">
+      <Modal
+        ModalStatus={Isopen}
+        setModalStatus={setIsopen}
+        ModalChildren="heyy"
+      ></Modal>
+    </div>
   );
 }
+
 export default App;

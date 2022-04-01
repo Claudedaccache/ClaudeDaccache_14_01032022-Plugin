@@ -1,11 +1,13 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Modal = ({
   ModalStatus,
   setModalStatus,
-  ModalContainerClass,
-  ModalBodyClass,
-  ModalcloseIcon,
+  ModalContainerStyle,
+  ModalBodyStyle,
+  ModalInnerStyle,
+  ModalCloseIconStyle,
   ModalChildren,
 }) => {
   const modalContainer = {
@@ -51,17 +53,19 @@ const Modal = ({
     cursor: "pointer",
   };
 
+  const innerText = {
+    marginLeft: "1rem",
+  };
+
   if (ModalStatus === true) {
     return (
-      <div
-        style={
-          ModalContainerClass !== "none" ? ModalContainerClass : modalContainer
-        }
-      >
-        <div style={ModalBodyClass !== "none" ? ModalBodyClass : ModalBody}>
-          {ModalChildren}
+      <div style={ModalContainerStyle ? ModalContainerStyle : modalContainer}>
+        <div style={ModalBodyStyle ? ModalBodyStyle : ModalBody}>
+          <div style={ModalInnerStyle ? ModalInnerStyle : innerText}>
+            {ModalChildren}
+          </div>
           <button
-            style={ModalcloseIcon !== "none" ? ModalcloseIcon : closeIcon}
+            style={ModalCloseIconStyle ? ModalCloseIconStyle : closeIcon}
             onClick={() => setModalStatus(false)}
           >
             X
@@ -72,6 +76,16 @@ const Modal = ({
   } else {
     return null;
   }
+};
+
+Modal.propTypes = {
+  ModalStatus: PropTypes.bool.isRequired,
+  setModalStatus: PropTypes.func.isRequired,
+  ModalContainerStyle: PropTypes.object,
+  ModalBodyStyle: PropTypes.object,
+  ModalInnerStyle: PropTypes.object,
+  ModalCloseIconStyle: PropTypes.object,
+  ModalChildren: PropTypes.string,
 };
 
 export default Modal;

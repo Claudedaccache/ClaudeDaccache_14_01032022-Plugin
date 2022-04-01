@@ -1,2 +1,2 @@
-import ModalContainer from '../Lib/Container/ModalContainer'
-export default ModalContainer
+import Modal from '../Lib/Container/ModalContainer'
+export default Modal
